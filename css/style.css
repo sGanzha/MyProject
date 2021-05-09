@@ -160,10 +160,12 @@ ul {
     font-size: 32px;
     line-height: 37px;
     color: var(--grey3);  
+    margin: 50px 0 30px;
 }
 
 .cards {
     display: flex;
+    margin: 0 -15px;
 }
 
 .product-card p {
@@ -201,6 +203,9 @@ ul {
     background: var(--white); 
     border-radius: 12px;
     border: 2px solid var(--yellow);  
+    display: block;
+    text-align: center;
+    padding: 11px 41px;
 }
 
 .add:hover {
@@ -212,7 +217,11 @@ ul {
     font-size: 18px;
     line-height: 25px;
     color: var(--grey2);
+    margin: 0;
+    padding: 0 27px 13px 30px;
 }
+
+
 
 .address-header {
     font-weight: bold;
@@ -244,33 +253,55 @@ ul {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     list-style-type: none;
+    margin-bottom: 32px;
+    align-items: center;
 }
 
 .goodstype a {
     color: var(--grey1);
 }
 
+.goodstype li{
+    padding-right: 12px;
+}
+
 .product-card {
+    display: flex;
     padding: 15px 15px 20px;
     background: var(--lightgrad);
     border-radius: 16px;
-    width: 25%;
+    flex-direction: column;
 }
 
-.product-card img{
-/*  */
+.product-card-wrap {
+    width: 25%;
+	padding: 0 15px;
+}
+
+.product-card:hover {
+    filter: drop-shadow(0px 8px 32px rgba(0, 0, 0, 0.12));
+}
+
+.img-div {
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    height: 268px;
 }
 
 .reviews{
     display: flex;
+    padding: 79px 81.5px;
+    justify-content: space-between;
 }
 
 .reviews article {
     display: flex;
-}
-
-footer {
-    /* display: flex; */
+    padding: 16px;
+    background: var(--white);
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
 }
 
 .logos {
@@ -281,6 +312,12 @@ footer {
 .slider {
     background-color: var(--yellow);
     display: flex;
+    justify-content: space-between;
+}
+
+.slider-info {
+    display: flex;
+    flex-direction: column;
 }
 
 .undermapinfo {
@@ -289,6 +326,12 @@ footer {
 
 .logoblock {
     display: flex;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 20px;
 }
 
 
