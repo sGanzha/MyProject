@@ -13,13 +13,16 @@
     --grey6: #FBFBFB;
     --white: #FFFFFF;
     --purple50: rgba(92, 7, 144, 0.5);
+    --instared:#FF0100;
+    --facebookblue:#1877F2;
+    --telegramblue:#37AEE2;
 }
 
 * {
 	box-sizing: border-box;
 }
 
-header {
+.header {
     display: flex;
     align-items: center;
 }
@@ -29,6 +32,7 @@ body {
 	font-weight: 400;
 	font-style: normal;	
     margin: 0;
+    padding-top: 30px;
 }
 
 a {
@@ -42,8 +46,9 @@ ul {
 }
 
 .wrapper {
-	width: 1280px;	
+	width: 1310px;	
 	margin: 0 auto;	
+    padding: 0 15px;
 }
 
 .menu {
@@ -76,17 +81,32 @@ ul {
 }
 
 .basket {
+    display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--grey1);    
-    margin-left: 22px;   
+    color: var(--grey1);      
+    align-items: center;
+    padding-left: 32px;
+}
+
+.basket span {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--white);
+    background: var(--red);
+    padding: 2px;
+    border-radius: 64px;
 }
 
 .basket svg {
     fill: var(--grey1);
+    margin-left: 10px;
+    margin-right: 4px;
 }
 
 .basket:hover {
@@ -154,6 +174,12 @@ ul {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--white);
+    background: var(--red);
+    padding: 16px 30px;
+    display: block;
+    text-align: center;
+    margin-right: 305px;
+    border-radius: 12px;
 }
 
 .section-header {
@@ -249,23 +275,34 @@ ul {
 }
 
 .goodstype {
-    display: flex;
+    display: inline-flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     list-style-type: none;
-    margin-bottom: 32px;
     align-items: center;
+    background: var(--grey6);
+    border-radius: 29px;
+    padding: 6px 7px;
+    margin-bottom: 30px;
+    
 }
 
 .goodstype a {
     color: var(--grey1);
 }
 
-.goodstype li{
-    padding-right: 12px;
+.goodstype button {
+    padding: 10px 20px;
+    border-color: transparent;
+    border-radius: 32px;
+    background: transparent;
+}
+
+.goodstype button:hover{
+    background: var(--purplegrad);
 }
 
 .product-card {
@@ -319,12 +356,18 @@ ul {
 .slider {
     background-color: var(--yellow);
     display: flex;
-    justify-content: space-between;
+    padding: 41px 22px 41px 22px;
+
 }
 
 .slider-info {
     display: flex;
     flex-direction: column;
+    margin-left: 87px;
+}
+
+.slider img {
+    margin-left: 281px;
 }
 
 .undermapinfo {
@@ -347,14 +390,14 @@ ul {
     margin-right: -30px;
 }
 
-.insta:hover{
-fill: #FF0100;
+.icon:hover .ico-fb {
+    fill: var(--facebookblue);
 }
-.facebook:hover{
-fill: #1877F2;
+.icon:hover .ico-tg {
+	fill: var(--telegramblue);
 }
-.telegram:hover{
-fill: #37AEE2;
+.icon:hover .ico-insta {
+	fill: var(--instared);
 }
 
 
