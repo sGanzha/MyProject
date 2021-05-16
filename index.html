@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <title>site</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
@@ -47,10 +47,10 @@
         </div>
             <main>
                 <div class="wrapper">
-                    <section>
+                    <section class="sliders">
                         <article class="slider">
                             <div class="slider-info">
-                                <p class="slide-header">Cлайд об акции какого<br> то товару</p> 
+                                <p class="slide-header">Cлайд об акции какого то товару</p> 
                                 <p class="slide-body">Cлайд об акции какого то товару</p>
                                 <a href="#" class="more">Подробнее</a>
                             </div>
@@ -62,12 +62,30 @@
                             <a href="#" class="more">Подробнее</a>
                             <img src="#" alt="">
                         </article>  -->
+                        <button class="arrow-left" type="button">
+                            <svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="svghover" opacity="0.5" width="35" height="35" rx="17.5" transform="matrix(-1 0 0 1 35 0.64502)" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2798 24.593C19.714 24.2517 19.7893 23.623 19.448 23.1888L15.6103 18.3068L19.448 13.4249C19.7893 12.9907 19.714 12.362 19.2798 12.0207C18.8456 11.6794 18.217 11.7546 17.8757 12.1888L13.5521 17.6888C13.267 18.0515 13.267 18.5622 13.5521 18.9248L17.8757 24.4248C18.217 24.859 18.8456 24.9343 19.2798 24.593Z" fill="#525252"/>
+                                </svg>
+                        </button>
+                        <button class="arrow-right" type="button">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="svghover" opacity="0.5" x="0.333008" y="0.64502" width="35" height="35" rx="17.5" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.0532 24.593C15.619 24.2517 15.5437 23.623 15.885 23.1888L19.7227 18.3068L15.885 13.4249C15.5437 12.9907 15.619 12.362 16.0532 12.0207C16.4874 11.6794 17.116 11.7546 17.4574 12.1888L21.7809 17.6888C22.066 18.0515 22.066 18.5622 21.7809 18.9248L17.4574 24.4248C17.116 24.859 16.4874 24.9343 16.0532 24.593Z" fill="#525252"/>
+                            </svg>
+                                
+                        </button>
+                        <div class="sliderbutton">
+                            <button type="button"></button>
+                            <button class="activebutton" type="button"></button>
+                        </div>
                     </section>
                     <section>
                         <h2 class="section-header">Акционные товары</h2>
                         <div class="cards">
                             <div class="product-card-wrap">
                                 <article class="product-card">
+                                    <span class="discount">Скидка 40%</span>
                                     <div class="img-div"><img src="img/product1.jpg" alt=""></div>
                                     <p>Куртка BluKids Red Mood 4 ever ку...</p>
                                     <div class="price">
@@ -79,6 +97,7 @@
                             </div>
                             <div class="product-card-wrap">
                                 <article class="product-card">
+                                    <span class="newitem">Новинка</span>
                                     <div class="img-div"><img src="img/product2.jpg" alt=""></div>
                                     <p>Куртка BluKids Red Mood 4 ever ку...</p>
                                     <div class="price">
@@ -124,6 +143,7 @@
                         <div class="cards">
                             <div class="product-card-wrap">
                                 <article class="product-card">
+                                    <span class="discount">Скидка 40%</span>
                                     <div class="img-div"><img src="img/product1.jpg" alt=""></div>
                                     <p>Куртка BluKids Red Mood 4 ever ку...</p>
                                     <div class="price">
@@ -135,6 +155,7 @@
                             </div>
                             <div class="product-card-wrap">
                                 <article class="product-card">
+                                    <span class="newitem">Новинка</span>
                                     <div class="img-div"><img src="img/product2.jpg" alt=""></div>
                                     <p>Куртка BluKids Red Mood 4 ever ку...</p>
                                     <div class="price">
@@ -173,20 +194,20 @@
                         <div class="reviews">
                             <article>
                                 <img src="img/man.jpg" alt="">
-                                <p class="review">Отличное качество. Очень<br> удобно сделаны карманы,<br> телефон удобно доставать.<br>
-                                При ношении вызывает у меня<br> только радость. В ней очень<br> тепло. Минусов нету.<br> Рекомендую.</p>
+                                <p class="review">Отличное качество. Очень удобно сделаны карманы, телефон удобно доставать. При ношении вызывает у меня только радость. В ней очень тепло. Минусов нету. Рекомендую.</p>
                             </article>
                             <article>
                                 <img src="img/woman.jpg" alt="">
-                                <p class="review">Придбала для дитини курточку<br> гарної якості, тепла, стильно<br> пошита, рівні строчки, не<br> марка.
-                                Можна прати в пралці,<br> але потрібно включати<br> додаткове полоскання.</p>
+                                <p class="review">Придбала для дитини курточку гарної якості, тепла, стильно пошита, рівні строчки, не марка. Можна прати в пралці, але потрібно включати додаткове полоскання.</p>
                             </article>
                         </div>
                     </section> 
                 </div>
             <section>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2750.2394111766093!2d30.720697615589913!3d46.42413407912411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6337522de4913%3A0x908a819813d3d94a!2z0JvRjtGB0YLQtNC-0YDRhNGB0LrQsNGPINC00L7RgC4sIDkwLCDQntC00LXRgdGB0LAsINCe0LTQtdGB0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDY1MDAw!5e0!3m2!1sru!2sua!4v1620315839053!5m2!1sru!2sua" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy">
-                </iframe>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2750.2394111766093!2d30.720697615589913!3d46.42413407912411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6337522de4913%3A0x908a819813d3d94a!2z0JvRjtGB0YLQtNC-0YDRhNGB0LrQsNGPINC00L7RgC4sIDkwLCDQntC00LXRgdGB0LAsINCe0LTQtdGB0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDY1MDAw!5e0!3m2!1sru!2sua!4v1620315839053!5m2!1sru!2sua" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
             <div class="wrapper undermapinfo">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9732 22.3819C15.3952 20.7589 21.5 16.1114 21.5 10.5C21.5 5.25329 17.2467 1 12 1C6.75329 1 2.5 5.25329 2.5 10.5C2.5 16.1114 8.60477 20.7589 11.0268 22.3819C11.6218 22.7806 12.3782 22.7806 12.9732 22.3819ZM12 13.5C13.6569 13.5 15 12.1569 15 10.5C15 8.84315 13.6569 7.5 12 7.5C10.3431 7.5 9 8.84315 9 10.5C9 12.1569 10.3431 13.5 12 13.5Z" fill="#FF3A3A"/>

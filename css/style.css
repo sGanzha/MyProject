@@ -1,38 +1,46 @@
 :root {
-    --red: #FF3A3A;
-    --yellow: #FFCD4E;
-    --purplegrad: radial-gradient(122% 93.75% at 18.75% 6.25%, #4E5CDA 0%, #6E42B7 100%);
-    --purple: #5C0790;
-    --lightgrad: radial-gradient(171.8% 132.02% at 50% -32.02%, #B3F1FF 0%, #D8FFEA 100%);
+    --red: #ff3a3a;
+    --yellow: #ffcd4e;
+    --purplegrad: radial-gradient(
+        122% 93.75% at 18.75% 6.25%,
+        #4e5cda 0%,
+        #6e42b7 100%
+    );
+    --purple: #5c0790;
+    --lightgrad: radial-gradient(
+        171.8% 132.02% at 50% -32.02%,
+        #b3f1ff 0%,
+        #d8ffea 100%
+    );
     --black: #000000;
     --grey1: #525252;
     --grey2: #858585;
-    --grey3: #ADADAD;
-    --grey4: #C9C9C9;
-    --grey5: #F4F4F4;
-    --grey6: #FBFBFB;
-    --white: #FFFFFF;
+    --grey3: #adadad;
+    --grey4: #c9c9c9;
+    --grey5: #f4f4f4;
+    --grey6: #fbfbfb;
+    --white: #ffffff;
     --purple50: rgba(92, 7, 144, 0.5);
-    --instared:#FF0100;
-    --facebookblue:#1877F2;
-    --telegramblue:#37AEE2;
+    --instared: #ff0100;
+    --facebookblue: #1877f2;
+    --telegramblue: #37aee2;
 }
 
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .header {
     display: flex;
     align-items: center;
+    padding-top: 30px;
 }
 
 body {
-	font-family: 'Roboto', 'Verdana', sans-serif;
-	font-weight: 400;
-	font-style: normal;	
+    font-family: "Roboto", "Verdana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
-    padding-top: 30px;
 }
 
 a {
@@ -46,8 +54,8 @@ ul {
 }
 
 .wrapper {
-	width: 1310px;	
-	margin: 0 auto;	
+    width: 1310px;
+    margin: 0 auto;
     padding: 0 15px;
 }
 
@@ -57,26 +65,26 @@ ul {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.1em;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     list-style-type: none;
     color: var(--grey1);
     margin: 0;
     padding-left: 80px;
 }
 
-.menu li{
+.menu li {
     padding-right: 36px;
 }
 
-.menu a{
+.menu a {
     color: var(--grey1);
 }
 
-.menu a:hover{
+.menu a:hover {
     color: var(--purple);
 }
 
-.menu a:active{
+.menu a:active {
     color: var(--purple50);
 }
 
@@ -87,7 +95,7 @@ ul {
     line-height: 16px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--grey1);      
+    color: var(--grey1);
     align-items: center;
     padding-left: 32px;
 }
@@ -124,15 +132,13 @@ ul {
     text-transform: uppercase;
     color: var(--grey1);
     margin-left: auto;
-    
 }
 
-
-.phone:hover{
+.phone:hover {
     color: var(--purple);
 }
 
-.phone:active{
+.phone:active {
     color: var(--purple50);
 }
 
@@ -157,14 +163,17 @@ ul {
     font-size: 40px;
     line-height: 47px;
     color: var(--white);
+    margin: 0;
+    width: 460px;
 }
-
 
 .slide-body {
     font-weight: normal;
     font-size: 18px;
     line-height: 25px;
     color: var(--white);
+    margin: 0;
+    padding: 12px 0 30px;
 }
 
 .more {
@@ -186,13 +195,14 @@ ul {
     font-weight: bold;
     font-size: 32px;
     line-height: 37px;
-    color: var(--grey3);  
+    color: var(--grey3);
     margin: 50px 0 30px;
 }
 
 .cards {
     display: flex;
     margin: 0 -15px;
+    padding-top: 32px;
 }
 
 .product-card p {
@@ -208,7 +218,7 @@ ul {
     font-size: 18px;
     line-height: 140%;
     color: var(--grey1);
-    text-decoration: line-through; 
+    text-decoration: line-through;
     margin: 0;
 }
 
@@ -227,9 +237,9 @@ ul {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--grey1);
-    background: var(--white); 
+    background: var(--white);
     border-radius: 12px;
-    border: 2px solid var(--yellow);  
+    border: 2px solid var(--yellow);
     display: block;
     text-align: center;
     padding: 11px 41px;
@@ -245,10 +255,8 @@ ul {
     line-height: 25px;
     color: var(--grey2);
     margin: 0;
-    padding: 0 27px 13px 30px;
+    padding: 0 27px 0 30px;
 }
-
-
 
 .address-header {
     font-weight: bold;
@@ -271,38 +279,34 @@ ul {
     line-height: 14px;
     color: var(--grey3);
     justify-content: center;
-    margin-top: 23px;
 }
 
 .goodstype {
     display: inline-flex;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
     list-style-type: none;
     align-items: center;
     background: var(--grey6);
     border-radius: 29px;
     padding: 6px 7px;
-    margin-bottom: 30px;
-    
-}
-
-.goodstype a {
-    color: var(--grey1);
 }
 
 .goodstype button {
     padding: 10px 20px;
+    font-family: "Roboto", "Verdana", sans-serif;
     border-color: transparent;
     border-radius: 32px;
     background: transparent;
+    text-transform: uppercase;
+    color: var(--grey1);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
 }
 
-.goodstype button:hover{
+.goodstype button:hover {
     background: var(--purplegrad);
+    color: var(--white);
 }
 
 .product-card {
@@ -311,11 +315,48 @@ ul {
     background: var(--lightgrad);
     border-radius: 16px;
     flex-direction: column;
+    position: relative;
+}
+
+.discount {
+    display: inline-flex;
+    border-radius: 10px;
+    background: var(--red);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--white);
+    padding: 6px 16px;
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    width: 111px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.newitem {
+    display: inline-flex;
+    border-radius: 10px;
+    background: var(--yellow);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--purple);
+    padding: 6px 16px;
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    width: 90px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
 }
 
 .product-card-wrap {
     width: 25%;
-	padding: 0 15px;
+    padding: 0 15px;
 }
 
 .product-card:hover {
@@ -326,14 +367,16 @@ ul {
     background-color: var(--white);
     display: flex;
     justify-content: center;
-	align-items: center;
+    align-items: center;
     height: 268px;
 }
 
-.reviews{
+.reviews {
     display: flex;
     padding: 79px 81.5px;
     justify-content: space-between;
+    border-radius: 16px;
+    background: var(--grey5);
 }
 
 .reviews article {
@@ -357,7 +400,7 @@ ul {
     background-color: var(--yellow);
     display: flex;
     padding: 41px 22px 41px 22px;
-
+    border-radius: 16px;
 }
 
 .slider-info {
@@ -373,6 +416,9 @@ ul {
 .undermapinfo {
     display: flex;
     align-items: center;
+    padding-top: 12px;
+    padding-bottom: 61px;
+
 }
 
 .logoblock {
@@ -386,21 +432,67 @@ ul {
     margin: 10px 0 20px;
 }
 
-.bottlogo {
-    margin-right: -30px;
-}
-
 .icon:hover .ico-fb {
     fill: var(--facebookblue);
 }
 .icon:hover .ico-tg {
-	fill: var(--telegramblue);
+    fill: var(--telegramblue);
 }
 .icon:hover .ico-insta {
-	fill: var(--instared);
+    fill: var(--instared);
 }
 
+.sliders {
+    position: relative;
+}
 
+.sliderbutton {
+    position: absolute;
+    bottom: 25px;
+    right: 623px;
+}
 
+.sliderbutton button {
+    border: 2px solid #ffffff;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    padding: 0;
+    background: transparent;
+}
 
+.sliderbutton .activebutton {
+    background: var(--white);
+}
 
+.arrow-left {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 0;
+    position: absolute;
+    top: 158px;
+    left: 22px;
+    border: transparent;
+    background: transparent;
+}
+
+.svghover:hover{
+    opacity: 1;
+}
+
+.arrow-right {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 0;
+    position: absolute;
+    top: 158px;
+    right: 22px;
+    border: transparent;
+    background: transparent;
+}
+
+.map {
+    padding-top: 100px;
+}
