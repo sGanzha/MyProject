@@ -59,7 +59,7 @@ ul {
     padding: 0 15px;
 }
 
-.menu {
+.header .menu {
     display: flex;
     font-weight: 500;
     font-size: 14px;
@@ -69,8 +69,23 @@ ul {
     list-style-type: none;
     color: var(--grey1);
     margin: 0;
-    padding-left: 80px;
+    padding-left: 90px;
 }
+
+footer .menu {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    list-style-type: none;
+    color: var(--grey1);
+    margin: 0;
+    padding-left: 60px;
+}
+
+
 
 .menu li {
     padding-right: 36px;
@@ -147,7 +162,8 @@ ul {
     font-weight: normal;
     font-size: 18px;
     line-height: 25px;
-    margin: 52px 0 32px;
+    padding: 52px 0 32px;
+
 }
 
 .navigation a {
@@ -155,7 +171,7 @@ ul {
 }
 
 .navigation li {
-    margin-right: 50px;
+    padding-right: 74px;
 }
 
 .slide-header {
@@ -165,6 +181,7 @@ ul {
     color: var(--white);
     margin: 0;
     width: 460px;
+    padding-top: 30px;
 }
 
 .slide-body {
@@ -196,13 +213,14 @@ ul {
     font-size: 32px;
     line-height: 37px;
     color: var(--grey3);
-    margin: 50px 0 30px;
+    padding-top: 50px;
+    margin: 0;
 }
 
 .cards {
     display: flex;
     margin: 0 -15px;
-    padding-top: 32px;
+    padding-top: 30px;
 }
 
 .product-card p {
@@ -210,24 +228,28 @@ ul {
     font-size: 16px;
     line-height: 19px;
     color: var(--grey1);
-    margin: 16px 0 10px;
+    margin: 0;
+    padding-top: 18px;
 }
 
-.product-card .old-price {
+.price .old-price {
     font-weight: normal;
     font-size: 18px;
     line-height: 140%;
     color: var(--grey1);
     text-decoration: line-through;
     margin: 0;
+    width: 117px;
 }
 
-.product-card .new-price {
+.price .new-price {
     font-weight: bold;
     font-size: 22px;
     line-height: 26px;
     color: var(--black);
-    margin: 0px;
+    margin: 0;
+    width: 117px;
+
 }
 
 .add {
@@ -263,6 +285,8 @@ ul {
     font-size: 22px;
     line-height: 26px;
     color: var(--grey1);
+    margin: 0;
+    padding-right: 18px;
 }
 
 .address {
@@ -270,6 +294,7 @@ ul {
     font-size: 18px;
     line-height: 25px;
     color: var(--grey1);
+    margin: 0;
 }
 
 .info {
@@ -279,6 +304,8 @@ ul {
     line-height: 14px;
     color: var(--grey3);
     justify-content: center;
+    margin:0;
+    padding-top: 23px;
 }
 
 .goodstype {
@@ -288,6 +315,7 @@ ul {
     background: var(--grey6);
     border-radius: 29px;
     padding: 6px 7px;
+    margin: 30px 0 2px;
 }
 
 .goodstype button {
@@ -377,6 +405,8 @@ ul {
     justify-content: space-between;
     border-radius: 16px;
     background: var(--grey5);
+    margin-top: 30px;
+    position: relative;
 }
 
 .reviews article {
@@ -385,6 +415,7 @@ ul {
     background: var(--white);
     box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
+    width: 546px;
 }
 
 .logos {
@@ -416,7 +447,7 @@ ul {
 .undermapinfo {
     display: flex;
     align-items: center;
-    padding-top: 12px;
+    padding-top: 28px;
     padding-bottom: 61px;
 
 }
@@ -427,9 +458,11 @@ ul {
 }
 
 .price {
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
-    margin: 10px 0 20px;
+    padding: 10px 0 20px;
+
+
 }
 
 .icon:hover .ico-fb {
@@ -447,9 +480,12 @@ ul {
 }
 
 .sliderbutton {
+    display: flex;
     position: absolute;
     bottom: 25px;
     right: 623px;
+    justify-content: space-between;
+    width: 33px;
 }
 
 .sliderbutton button {
@@ -465,7 +501,7 @@ ul {
     background: var(--white);
 }
 
-.arrow-left {
+.sliders .arrow-left {
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -481,7 +517,7 @@ ul {
     opacity: 1;
 }
 
-.arrow-right {
+.sliders .arrow-right {
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -495,4 +531,28 @@ ul {
 
 .map {
     padding-top: 100px;
+}
+
+.reviews .arrow-left{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 0;
+    position: absolute;
+    top: 172px;
+    left: 22px;
+    border: transparent;
+    background: transparent;
+}
+
+.reviews .arrow-right{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 0;
+    position: absolute;
+    top: 172px;
+    right: 22px;
+    border: transparent;
+    background: transparent;
 }
