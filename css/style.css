@@ -643,29 +643,32 @@ footer .menu {
 .catalog{
     display: flex;
     flex-wrap: wrap;
-    width: 980px;
+    width: 953px;
+    justify-content: space-between;
 }
 
 .filter-catalog {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding-top: 49px;
 
 }
 
 .product-card-wrap-catalog {
-    width: 33.3%;
-    padding:24px 0 0px 30px;
+    padding-bottom: 24px;
 }
 
 .form{
-    display: flex;
-    justify-content: flex-end;
+    position: relative;
+    padding: 20px 0 155px;
 }
 
 .radios{
     display: flex;
     flex-direction: column;
+    width: 297px;
+    background: red;
+    margin-right: 139px;
 }
 
 .inputs{
@@ -684,8 +687,20 @@ footer .menu {
     padding:16px 10px 16px 16px;
     background: var(--grey5);
     border-radius: 12px;
-    border-color: transparent;
+    border: 2px solid transparent;
     font-family: inherit;
+}
+
+.inputs textarea:hover,
+.inputs input:hover {
+    border-color:rgba(0, 0, 0, 0.2);
+}
+
+.inputs textarea:focus,
+.inputs input:focus {
+    background-color: var(--white);
+    border-color:rgba(0, 0, 0, 0.2);
+    outline: none;
 }
 
 .inputs input{
@@ -708,6 +723,8 @@ footer .menu {
 }
 
 .gopay{
+    font-family: "Roboto", "Verdana", sans-serif;
+    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -720,6 +737,10 @@ footer .menu {
     display: inline-block;
     text-align: center;
     border-radius: 12px;
+    border: none;
+    position: absolute;
+    right: 104px;
+    bottom: 67px;
 }
 
 .buttondiv{
@@ -727,6 +748,41 @@ footer .menu {
     justify-content: flex-end;
     padding: 29px 0 78px;
 }
+
+.radios-inputs {
+    display: flex;
+    justify-content: center;
+
+}
+
+.back-arrow {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--grey1);
+    position: relative;
+    padding:17px 32px
+}
+
+.back-arrow:hover {
+    color: var(--purple);
+}
+
+.back-arrow::before {
+    content: '';
+    width: 16px;
+    height: 12px;
+    background-image: url(../img/back-line.svg);
+    position: absolute;
+    left: 0;
+    top: 19px;
+
+}
+
+
 
 
 
