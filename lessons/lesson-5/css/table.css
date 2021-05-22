@@ -1,0 +1,28 @@
+.table {
+	border-collapse: collapse;
+	width: 100%;
+}
+.yellow {
+	background-color: yellow;
+}
+.green {
+	background-color: green;
+}
+.table td {
+	width: 33.333%;
+	vertical-align: top;
+}
+.table td,
+.table th {
+	border: 1px solid red;
+	padding: 10px;
+}
+
+.caption {
+	text-align: right;
+	caption-side: bottom;
+}
+
+.last {
+	text-align: right;
+}

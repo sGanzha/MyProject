@@ -1,0 +1,71 @@
+.box {
+/* 	width: 500px;
+	height: 300px; */
+	
+/* 	background-image: url('../img/duck.jpg'); */
+
+/* 	background-color: red; */
+/* 	background-image: url('../img/logo.png'); */
+/* 	background-position: center center;
+	background-repeat: no-repeat; */
+	/* background-attachment: fixed; */
+
+	/* background: red url('../img/logo.png') center center no-repeat fixed; */
+
+	/* background: url('../img/logo.png') center center no-repeat, 
+				url('../img/duck.jpg') right top no-repeat; */
+
+	/* background-size: 300px 300px;		 */	
+
+	/* background-size: contain; */
+	/* background-size: cover; */
+
+
+	/* background-image: linear-gradient(135deg, #000000, red); */
+
+	/* background-image: linear-gradient(#000000 30%, red 30%, red 60%, green 60%); */
+
+	/* background-image: radial-gradient(#000000, red) */
+
+}
+
+
+.box-radius {
+/* 	width: 300px;
+	height: 300px;
+	background-color: red; */
+	/* border-radius: 20px 50px; */
+/* 
+	border-radius: 100px 20px 100px 20px / 30px 0 30px 0; */
+}
+
+/* .text-shadow {
+	font-size: 36px;
+	color: green;
+	text-shadow: 10px 20px 5px black, 
+				 -5px -10px 4px yellow,
+				 25px -10px 4px red;
+} */
+
+
+/* .box-shadow {
+	font-size: 55px;
+	color: red;
+	width: 300px;
+	height: 300px;
+	background-color: green;
+	box-shadow: inset 0 0 10px 10px black, 
+					  0 0 10px 10px red;
+} */
+
+
+
+
+
+
+
+
+
+
+
+

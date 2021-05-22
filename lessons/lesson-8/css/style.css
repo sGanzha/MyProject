@@ -1,0 +1,101 @@
+* {
+	box-sizing: border-box;
+}
+/* :focus {
+	outline: none;
+} */
+a:hover {
+
+}
+
+a:active {
+	
+}
+
+a:visited {
+	
+}
+
+.input-text {
+	border: none;
+	background-color: gray;
+	border-radius: 8px;
+	border: 2px solid transparent;
+}
+
+.input-text:hover {
+	border-color: black;
+}
+
+.input-text:focus {
+	outline: none;
+	border-color: black;
+	background-color: transparent;
+}
+
+.text p {
+	padding-bottom: 20px;
+}
+
+.text p:empty{
+	display: none;
+}
+
+
+.list li {
+	font-size: 24px;
+}
+
+/* .list li:first-child {
+	background-color: red;
+}
+
+.list li:last-child {
+	background-color: red;
+} */
+
+/* .list li:nth-child(odd){
+	background-color: red;
+}
+ */
+/* .list li:nth-child(even){
+	background-color: red;
+} */
+/* .list li:nth-child(5){
+	background-color: red;
+} */
+
+/* .list li:nth-child(4n + 2){
+	background-color: red;
+}
+ */
+
+/*  .list li:nth-last-child(2){
+	background-color: red;
+} */
+
+
+/* .radio-bt {
+
+}
+
+.radio-bt:checked {
+	opacity: 0.5;
+} */
+
+/* .checkbox:checked + .checkbox-text {
+	color: red;
+} */
+
+/* .input-text2 {
+	border: 2px solid red;
+}
+
+.input-text2:disabled {
+	cursor: not-allowed;
+	opacity: 0.3;
+} */
+
+/* .input-text2:required {
+	border-color: green;
+} */

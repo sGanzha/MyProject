@@ -1,0 +1,59 @@
+.product-item {
+
+}
+
+.product-item__price {
+
+}
+
+.product-item__title {
+
+}
+
+.arrow {
+	width: 20px;
+	height: 20px;
+	background-color: red;
+	position: absolute;
+}
+
+.arrow_left {
+	left: 22px;
+}
+
+.arrow_right {
+	right: 22px;
+}
+
+
+
+/* .label {
+
+}
+
+.label_red {
+	background-color: red;
+	color: #fff;
+}
+.label_yellow {
+	background-color: yellow;
+	color: #000;
+}
+ */
+
+
+/* .button {
+
+} */
+
+
+.link {
+	
+}
+
+
+
+
+
+
+

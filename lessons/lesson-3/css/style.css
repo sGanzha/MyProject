@@ -1,0 +1,223 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', 'Verdana', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	margin: 0;	
+}
+
+.wrapper {
+	width: 1280px;	
+	margin: 0 auto;	
+}
+
+.clearfix::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+/* .box {
+	width: 300px;
+	height: 200px;
+	padding: 20px;
+	padding: 10px 0 30px 40px;
+	padding: 20px 40px;
+	padding: 20px 50px 100px;
+	padding-top: 20px;
+	padding-right: 30px;
+	padding-bottom: 40px;
+	padding-left: 80px;	
+	margin: 30px;
+	margin: 20px 40px;
+	margin-top: 10px;
+	margin-bottom: 30px;	
+	margin-right: 50px;	
+	margin-left: 80px;	
+	border: 5px solid green;
+	border-top: 10px dotted #000000;
+	border-right: 10px dashed blue;
+	border-bottom: 10px double #000;
+	background-color: red;
+} */
+
+
+
+/* .box-block {
+	width: 300px;	
+	height: 200px;	
+	padding: 30px;	
+ 	margin: 30px;	
+	border: 10px solid red; 
+	background-color: green;
+} */
+
+
+/* .box1 {
+	margin-bottom: 30px;	
+}
+
+.box2 {
+	margin-top: 40px;	
+}
+
+ */
+
+
+
+
+
+/* .parent {
+
+}
+
+.child {
+	margin-top: 40px;	
+	background-color: green;
+}
+ */
+
+
+/* .inline {
+	width: 200px;	
+	height: 300px;	
+	margin: 30px;
+	padding: 10px 30px;
+	border: 5px solid red;
+	background-color: green;
+} */
+
+
+
+
+/* .box10 {
+	width: 1280px;
+	width: 300px;
+	padding: 30px;	
+	border: 10px solid green;
+	margin: 20px;	
+	height: 300px;	
+	background-color: red;
+	margin: 0 auto;
+} */
+
+
+/* .box {
+	height: 200px;	
+	width: 500px;	
+	padding: 20px;	
+	border: 20px solid red;
+	box-sizing: border-box;
+} */
+
+/* .div {
+	display: inline;
+	width: 200px;
+	height: 200px;
+	background:red;
+}
+
+.span {
+	display: block;
+	width: 200px;
+	height: 200px;
+	background:red;
+}
+
+.box-hide {
+	width: 200px;
+	height: 200px;
+	background:blue;
+}
+ */
+
+
+
+
+/* .link {
+	color: red;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 25px;
+}
+
+.link:hover {
+	color: green;
+	background-color: lightyellow;
+} */
+
+/* .link:active {
+	background-color: #000000;
+} */
+
+/* .link:focus {
+	background-color: #000000;
+}
+ */
+
+/* .img-left {
+	float: left;
+}
+
+.img-right {
+	float: right;
+}
+
+ */
+
+ .logo {
+ 	font-size: 48px;
+ 	float: left;
+ 	font-weight: 500;
+ 	font-style: italic;
+ }
+
+ .phone {
+ 	font-size: 48px;
+ 	float:  right;
+ }
+
+.box-float {
+	font-size: 36px;
+	color: #ffffff;
+	float: left;
+	width: 200px;
+	height: 200px;
+	padding: 20px;
+	border: 10px solid red;
+	background-color: green;
+}
+
+.box-float-01 {
+	height: 300px;
+}
+
+.banner {
+	background-color: blue;
+	font-size: 30px;
+	color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,168 @@
+body {
+	font-family: Tahoma, sans-serif;
+}
+
+/* h1 {
+	font-size: 60px;
+}
+
+p {
+	font-size: 30px;	
+}
+
+.about-box {
+	font-size: 40px;	
+}
+
+#comment {
+	font-size: 60px;	
+} */
+
+/* селектор {
+	свойство: значение;
+	свойство: значение;
+	свойство: значение;
+	свойство: значение;
+} */
+
+
+/* .box {
+	font-size: 20px;
+} */
+
+.box10 {
+	font-family: "Tahoma", sans-serif;
+	/* font-family: "Times New Roman", serif; */
+ 	font-size: 20px;
+	font-style: italic;	
+	font-weight: bold;
+	line-height: 30px;
+	text-transform: uppercase;
+	/* text-transform: lowercase; */
+	/* text-transform: capitalize; */
+	text-align: justify;
+	text-indent: 30px;
+}
+
+.box11 {
+	font-size: 40px;	
+	font-style: normal;	
+	text-decoration: underline;
+	/* text-decoration: overline; */
+	/* text-decoration: line-through; */
+	/* text-decoration: underline overline; */
+	text-align: center;
+	letter-spacing: 20px;
+	word-spacing: 20px;	
+	/* color: red; */
+	color: #00ff00;
+	/* color: rgb(255,0,255); */
+	/* color: rgba(255,0,125,0.5); */
+}
+
+/* .title {
+	font-weight: normal;
+}
+
+.link {
+	text-decoration: none;
+}
+
+.text {
+	font-size: 30px;	
+}
+
+.inset {
+	font-size: 24px;	
+}
+ */
+
+
+/* 
+#title30 {
+	font-size: 50px;	
+}
+.title3 {
+	color: green;
+	font-size: 40px;	
+}
+h3 {
+	font-size: 30px;	
+}
+ */
+
+
+/* .list {
+	font-size: 20px;	
+	font-weight: bold;	
+}
+
+.list li {
+
+}
+
+.box p {
+	font-size: 30px;	
+}
+
+.box60 .box70 {
+	font-size: 30px;	
+} */
+
+
+/* 
+div p {		0 0 2
+	font-size: 40px;	
+}
+
+p {			0 0 1
+	font-size: 30px;	
+} 
+
+.text90 {	0 1 0
+	font-size: 60px;	
+}
+
+.box90 .text90 {	0 2 0
+	font-size: 40px;	
+} */
+
+
+
+/* .box p .box50 { 
+
+}
+
+.four #box p span {		
+
+} */
+
+
+.list10 {
+	/* list-style-type: decimal; */
+	/* list-style-position: inside; */
+	/* list-style: decimal inside; */
+}
+
+.box-bg {
+/* 	background-color: green;
+	background-image: url(../img/smile.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom; */
+	/* background-position: -20px 90px; */
+	/* background-color: rgba(255,60,50,0.4); */
+}
+/* 
+.box50 {
+	font-size: 30px;	
+}
+
+.box30 {
+	color: red;
+} */
+
+body {
+	font-family: Tahoma, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+}
