@@ -9,7 +9,6 @@
     </head>
 <body>
     <div class="wrapper">
-        <main>
             <header class="header">
                 <a href="index.html">
                     <svg width="87" height="40" viewBox="0 0 87 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,35 +35,69 @@
                         <span>3</span>
                 </a> 
             </header> 
-            <a class="back-arrow" href="catalog.html">назад</a>
-            <div>
-                <form class="form" action="https://fom.in.ua/echo" method="get">
-                    <div class="radios-inputs">
-                        <div class="radios">
-                        </div>
-                        <div class="inputs">
-                            <div>
-                                <span>Контактные данные</span>
-                                <input type="text" placeholder="Имя">
-                                <input type="text" placeholder="Фамилия">
-                                <input type="tel" placeholder="+38 000 000 00 00">
-                                <input type="email" placeholder="Email">
+            <main>
+                <a class="back-arrow" href="catalog.html">назад</a>
+                <form class="form form-wrapper" action="https://fom.in.ua/echo" method="get">
+                        <div class="radios-inputs">
+                            <div class="radios">
+                                <h2>Всего к оплате</h2>
+                                <p class="radios__price">8 240 грн</p>
+                                <p class="radios__type">Выбери способ оплаты</p>
+                                <p>
+                                    <label>
+                                        <input type="radio" name="paytype">Apple pay
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="radio" name="paytype">Google pay
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="radio" name="paytype">Master Card/Visa
+                                    </label>
+                                </p>
+                                <p class="radios__type">Выбери способ доставки</p>
+                                <p>
+                                    <label>
+                                        <input type="radio" name="delivery">Доставка №1
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="radio" name="delivery">Самовывоз
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="radio" name="delivery">Заберу в почтомате
+                                    </label>
+                                </p>
                             </div>
-                            <div>
-                                <span>Адрес доставки</span>
-                                <input type="number" placeholder="Индекс">
-                                <input type="text" placeholder="Город">
-                                <input type="text" placeholder="Улица">
-                                <input type="number" placeholder="№ дома, квартиры">
+                            <div class="inputs">
+                                <div>
+                                    <span>Контактные данные</span>
+                                    <input type="text" placeholder="Имя">
+                                    <input type="text" placeholder="Фамилия">
+                                    <input type="tel" placeholder="+38 000 000 00 00">
+                                    <input type="email" placeholder="Email">
+                                </div>
+                                <div>
+                                    <span>Адрес доставки</span>
+                                    <input type="number" placeholder="Индекс">
+                                    <input type="text" placeholder="Город">
+                                    <input type="text" placeholder="Улица">
+                                    <input type="number" placeholder="№ дома, квартиры">
+                                </div>
+                                <textarea rows="4" cols="60" placeholder="Комментарий"></textarea>
                             </div>
-                            <textarea rows="4" cols="60" placeholder="Комментарий"></textarea>
                         </div>
-                    </div>
-                    <button class="gopay" type="submit">Перейти к оплате</button>
+                        <div class="form-div">
+                            <button class="gopay" type="submit">Перейти к оплате</button>
+                        </div>
                 </form>
-            </div>
-        </main>
-        
+            </main>       
         <footer class="footer">
             <div class="logoblock">
                 <a href="index.html">
