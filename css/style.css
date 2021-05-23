@@ -739,10 +739,43 @@ ul {
     width: 28%;
 }
 
-.radios label{
+.radios__text {
     font-size: 16px;
     line-height: 19px;
     color: var(--grey2);
+    padding-left: 47px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.radios__text::after {
+	content: '';
+	border: 2px solid #525252;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.radios__text::before {
+	display: none;
+	content: '';
+	position: absolute;
+	background: #5C0790;
+	width: 14px;
+	height: 14px;
+	left: 9px;
+	top: 50%;
+	border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.input-radio:checked + .radios__text::before {
+	display: block;
 }
 
 .radios__price {
