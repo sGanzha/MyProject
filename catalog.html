@@ -49,8 +49,8 @@
                     <div class="filter">
                         <h2>Фильтр Товара</h2>
                         <div class="filter__line">
-                            <button class="filter__button-left" type="button"></button>
-                            <button class="filter__button-right" type="button"></button>
+                            <button class="filter__button left" type="button"></button>
+                            <button class="filter__button right" type="button"></button>
                         </div>
                         <div class="filter__price">
                             <span>890 грн.</span>
@@ -59,20 +59,20 @@
                         </div>
                         <p>
                             <label>
-                                <input type="checkbox" name="checkbox-01" value="100"> 
-                                С капюшоном
+                                <input class="filter-checkbox visually-hidden" type="checkbox" name="checkbox-01" value="100" checked> 
+                                <span class="filter__text">С капюшоном</span>
                             </label>
                         </p>
                         <p>
                             <label>
-                                <input type="checkbox" name="checkbox-02" value="200"> 
-                                Зимние
+                                <input class="filter-checkbox visually-hidden" type="checkbox" name="checkbox-02" value="200"> 
+                                <span class="filter__text">Зимние</span>
                             </label>
                         </p>
                         <p>
                             <label>
-                                <input type="checkbox" name="checkbox-03" value="300"> 
-                                Осенние
+                                <input class="filter-checkbox visually-hidden" type="checkbox" name="checkbox-03" value="300"> 
+                                <span class="filter__text">Осенние</span>
                             </label>
                         </p>
                         <button class="filter__apply" type="button">применить</button>
@@ -163,11 +163,13 @@
                             </article>
                         </div>
                         <div class="paginator">
+                            <a href="#" class="paginator__arrow-left"></a>
                             <a class="paginator-active" href="#">1</a>
                             <a href="#">2</a>
                             <span>...</span>
                             <a href="#">3</a>
                             <a href="#">4</a>
+                            <a href="#" class="paginator__arrow-right"></a>
                         </div>
                     </div>
                 </div> 
