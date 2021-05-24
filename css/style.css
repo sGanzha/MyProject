@@ -304,6 +304,15 @@ ul {
     margin: 0;
 }
 
+.section-header-catalog {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    color: var(--grey3);
+    padding-top: 38px;
+    margin: 0;
+}
+
 .cards {
     display: flex;
     margin: 0 -15px;
@@ -635,11 +644,30 @@ ul {
     width: 23%;
 }
 
+.filter h2{
+    margin:0;
+    padding-bottom: 50px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--grey1);
+}
+
 .filter__line{
     height: 4px;
     background-color: var(--grey5);
     border-radius: 15px;
     position: relative;
+}
+
+.filter__checks {
+    padding-top: 5px;
+    padding-bottom: 7px;
+}
+
+.filter__checks p{
+    margin: 0;
+    padding-bottom: 21px;
 }
 
 .filter__button { 
@@ -781,11 +809,16 @@ ul {
     width: 28%;
 }
 
+.radios__buttons{
+    margin: 0;
+    padding-top: 20px;
+}
+
 .radios__text {
     font-size: 16px;
     line-height: 19px;
     color: var(--grey2);
-    padding-left: 47px;
+    padding-left: 42px;
     position: relative;
     display: flex;
     align-items: center;
@@ -826,6 +859,8 @@ ul {
     font-size: 32px;
     line-height: 37px;
     color: var(--grey1);
+    margin: 0;
+    padding-top: 14px;
 }
 
 .radios__type{
@@ -835,6 +870,8 @@ ul {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--grey1);
+    margin: 0;
+    padding-top: 36px;
 }
 
 .radios h2{
@@ -844,6 +881,8 @@ ul {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--grey2);
+    margin: 0;
+    padding-top: 6px;
 }
 
 .inputs {
@@ -941,7 +980,7 @@ ul {
     text-transform: uppercase;
     color: var(--grey1);
     position: relative;
-    padding: 17px 32px;
+    padding: 14px 32px;
 }
 
 .back-arrow:hover {
@@ -958,8 +997,10 @@ ul {
     height: 12px;
     background-image: url(../img/back-line.svg);
     position: absolute;
-    left: 0;
-    top: 19px;
+    left: 3px;
+    top: 15px;
+
+
 }
 
 .form-div {
@@ -968,12 +1009,22 @@ ul {
     padding: 29px 0 78px;
 }
 
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    padding-top: 4px;
+}
+
 .breadcrumbs a {
     font-size: 16px;
     line-height: 19px;
     color: var(--grey3);
     padding-right: 34px;
     position: relative;
+}
+
+.breadcrumbs a:hover{
+    color: var(--grey1);
 }
 
 .breadcrumbs span {
@@ -1013,7 +1064,7 @@ ul {
 
 .paginator {
     display: flex;
-    padding: 32px 0 100px;
+    padding: 28px 0 96px;
 }
 
 
