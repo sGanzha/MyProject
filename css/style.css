@@ -69,8 +69,7 @@ ul {
 }
 
 .wrapper {
-    max-width: 1310px;
-    min-width: 991px;
+    width: 1310px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -581,7 +580,7 @@ ul {
     display: flex;
     position: absolute;
     bottom: 25px;
-    right: 623px;
+    right: 50%;
     justify-content: space-between;
     width: 33px;
 }
@@ -641,7 +640,7 @@ ul {
 }
 
 .filter {
-    width: 23%;
+    width: 23.2%;
 }
 
 .filter h2 {
@@ -709,15 +708,25 @@ ul {
     width: 9px;
 }
 
-.filter__price span:first-child,
-.filter__price span:last-child {
+.filter__price input:first-child,
+.filter__price input:last-child {
     display: inline-flex;
     background: var(--grey5);
     border-radius: 12px;
-    padding: 16px 10px 16px 16px;
     font-size: 16px;
     line-height: 19px;
     color: var(--grey2);
+    border:none;
+    font-family: inherit;
+    width: 100px;
+}
+
+.filter__price input:first-child {
+    padding: 15px 10px 16px 16px;
+}
+
+.filter__price input:last-child {
+    padding: 14px 1px 16px 16px;
 }
 
 .filter__apply {
@@ -790,7 +799,7 @@ ul {
 .catalog {
     display: flex;
     flex-wrap: wrap;
-    width: 77%;
+    width: 76.45%;
     justify-content: center;
     margin: 0 -15px 0 0;
 }
@@ -1048,6 +1057,8 @@ ul {
 
 .breadcrumbs .homelogo {
     background-image: url(../img/home.svg);
+    width: 20px;
+    height: 21px;
     background-repeat: no-repeat;
     margin-right: 24px;
 }
