@@ -1,0 +1,36 @@
+.menu {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    list-style-type: none;
+    color: var(--grey1);
+    margin: 0;
+
+    &__li {
+        padding-right: 36px;
+    }
+
+    &__link {
+        color: $grey1;
+    }
+
+    &__link:hover {
+        color: $purple;
+        transition-duration: 1s;
+    }
+
+    &__link:active {
+        color: $purple50;
+        transition-duration: 1s;
+    }
+
+}
+
+@media (min-width: 375px){
+    // .menu {
+    //     display: none;
+    // }
+}

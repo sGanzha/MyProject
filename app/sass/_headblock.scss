@@ -1,0 +1,15 @@
+.headblock {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+
+    &__menu {
+        padding-left: 90px;
+    }
+}
+
+@media (min-width: 375px){
+    .menu.headblock__menu {
+        display: none;
+    }
+}

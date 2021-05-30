@@ -1,0 +1,90 @@
+.radios {
+    width: 28%;
+
+    &__h2 {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $grey2;
+        margin: 0;
+        padding-top: 6px;
+    }
+
+    &__price {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 37px;
+        color: $grey1;
+        margin: 0;
+        padding-top: 14px;
+    }
+
+    &__pay-type {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $grey1;
+        margin: 0;
+        padding-top: 36px;
+    }
+
+    &__buttons {
+        margin: 0;
+        padding-top: 20px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 19px;
+        color: $grey2;
+        padding-left: 42px;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    &__text:hover::after {
+        background-color: $grey5;
+        transition-duration: 1s;
+    }
+
+    &__text::after {
+        content: "";
+        border: 2px solid $grey1;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        border-radius: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__text::before {
+        display: none;
+        content: "";
+        position: absolute;
+        background: $purple;
+        width: 14px;
+        height: 14px;
+        left: 9px;
+        top: 50%;
+        border-radius: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__input-radio:checked+ &__text::before {
+        display: block;
+        z-index: 1;
+    }
+
+    &__input-radio:disabled+&__text {
+        opacity: 0.3;
+        cursor: not-allowed;
+    }
+
+}

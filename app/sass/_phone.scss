@@ -1,0 +1,19 @@
+.phone {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: var(--grey1);
+    margin-left: auto;
+
+    &:hover {
+        color: $purple;
+        transition-duration: 1s;
+    }
+
+    &:active {
+        color: $purple;
+        transition-duration: 1s;
+    }
+
+}

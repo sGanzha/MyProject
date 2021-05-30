@@ -1,0 +1,47 @@
+.basket {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--grey1);
+    align-items: center;
+    padding-left: 32px;
+
+    &:hover {
+        color: $purple;
+        transition-duration: 1s;
+    }
+
+    &:hover &__svg {
+        fill: $purple;
+        transition-duration: 1s;
+    }
+
+    &__span {
+        display: inline-block;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: $white;
+        background: $red;
+        padding: 2px;
+        text-align: center;
+        border-radius: 64px;
+    }
+
+    &__svg {
+        fill: $grey1;
+        margin-left: 10px;
+        margin-right: 4px;
+
+    }
+
+}
+
+@media(min-width: 375px){
+    .basket__hide {
+        display: none;
+    }
+}

@@ -1,0 +1,100 @@
+.sliders {
+    position: relative;
+
+    &__buttons-div {
+        display: flex;
+        position: absolute;
+        bottom: 25px;
+        right: 50%;
+        justify-content: space-between;
+        width: 33px;
+    }
+
+    &__button {
+        border: 2px solid $white;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        padding: 0;
+        background: transparent;
+    }
+
+    &__button_activebutton {
+        background: $white;
+    }
+
+
+
+}
+
+.slider {
+    background-color: $yellow;
+    display: flex;
+    padding: 41px 22px 41px 22px;
+    border-radius: 16px;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 87px;
+    }
+
+    &__header {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 47px;
+        color: $white;
+        margin: 0;
+        width: 36%;
+        padding-top: 30px;
+    }
+
+    &__body {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: $white;
+        margin: 0;
+        padding: 12px 0 30px;
+    }
+
+    &__img {
+        margin-left: 281px;
+    }
+
+    &__more-button {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $white;
+        background: $red;
+        padding: 16px 30px;
+        display: block;
+        text-align: center;
+        margin-right: 305px;
+        border-radius: 12px;
+    }
+
+    &__more-button:hover {
+        opacity: 0.7;
+        transition-duration: 1s;
+    }
+
+    &__more-button:active {
+        opacity: 0.3;
+        transition-duration: 1s;
+    }
+
+}
+
+@media (min-width: 375px){
+    .sliders {
+        margin: 0 -17px;
+    }
+
+    .slider__header {
+        width: 91%;
+    }
+}

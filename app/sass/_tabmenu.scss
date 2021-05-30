@@ -1,0 +1,35 @@
+.tab-menu {
+    display: inline-flex;
+    list-style-type: none;
+    align-items: center;
+    background: var(--grey6);
+    border-radius: 29px;
+    padding: 6px 7px;
+    margin: 30px 0 2px;
+
+    &__button {
+        padding: 10px 20px;
+        font-family: "Roboto", "Verdana", sans-serif;
+        border-color: transparent;
+        border-radius: 32px;
+        background: transparent;
+        text-transform: uppercase;
+        color: $grey1;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.1em;
+    }
+
+    &__button:hover {
+        background: $purplegrad;
+        color: $white;
+        transition-duration: 1s;
+    }
+
+    &__button_active {
+        background: $purplegrad;
+        color: $white;
+    }
+
+}

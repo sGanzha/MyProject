@@ -1,0 +1,37 @@
+.reviews {
+    display: flex;
+    padding: 79px 81.5px;
+    justify-content: space-between;
+    border-radius: 16px;
+    background: $grey5;
+    margin-top: 30px;
+    position: relative;
+}
+
+.review {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    background: $white;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    width: 546px;
+
+    &__p {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        color: var(--grey2);
+        margin: 0;
+        padding: 0 27px 0 30px;
+    }
+}
+
+@media (min-width: 375px){
+    .review {
+        width: 100%;
+    }
+    .review:last-child{
+        display: none;
+    }
+}

@@ -2,19 +2,19 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8" />
-        <title>site</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-            rel="stylesheet"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Главная</title>
+        <link rel="preload" href="fonts/roboto-v27-cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" href="fonts/roboto-v27-cyrillic-500.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" href="fonts/roboto-v27-cyrillic-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
         <div class="wrapper">
-            <header class="header">
-                <a href="index.html">
-                    <svg
+            <header class="headblock">
+                <a class="head-logo" href="index.html">
+                    <svg class="head-logo__svg"
                         width="87"
                         height="40"
                         viewBox="0 0 87 40"
@@ -47,15 +47,15 @@
                         </defs>
                     </svg>
                 </a>
-                <ul class="menu">
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">Акции</a></li>
+                <ul class="menu headblock__menu">
+                    <li class="menu__li"><a class="menu__link" href="#">О нас</a></li>
+                    <li class="menu__li"><a class="menu__link" href="#">Контакты</a></li>
+                    <li class="menu__li"><a class="menu__link" href="#">Акции</a></li>
                 </ul>
                 <a href="tel:+380681383442" class="phone">+38 068 138 34 42</a>
                 <a href="pay.html" class="basket"
-                    >Корзина
-                    <svg
+                    ><span class="basket__hide">Корзина</span>
+                    <svg class="basket__svg"
                         width="20"
                         height="18"
                         viewBox="0 0 20 18"
@@ -68,50 +68,50 @@
                             d="M0.100098 0.999976C0.100098 0.502919 0.503041 0.0999756 1.0001 0.0999756H3.0001C3.40595 0.0999756 3.7616 0.371615 3.86839 0.76317L4.51773 3.1441L19.0592 4.10192C19.5323 4.13308 19.9001 4.52588 19.9001 4.99998V11C19.9001 11.4703 19.538 11.8613 19.0691 11.8973L6.06912 12.8973C5.6387 12.9304 5.2454 12.6533 5.13181 12.2368L2.94999 4.23678L2.31268 1.89998H1.0001C0.503041 1.89998 0.100098 1.49703 0.100098 0.999976ZM7.87327 5.78172C7.75272 5.2995 7.26408 5.00632 6.78186 5.12687C6.29965 5.24743 6.00646 5.73607 6.12702 6.21828L7.12702 10.2183C7.24757 10.7005 7.73621 10.9937 8.21843 10.8731C8.70064 10.7526 8.99383 10.2639 8.87327 9.78172L7.87327 5.78172ZM11.3729 5.35902C11.8649 5.28873 12.3208 5.63064 12.3911 6.1227L12.8911 9.6227C12.9614 10.1148 12.6195 10.5706 12.1274 10.6409C11.6354 10.7112 11.1795 10.3693 11.1092 9.87725L10.6092 6.37725C10.5389 5.88519 10.8808 5.42932 11.3729 5.35902ZM16.9001 6.50002C16.9001 6.00297 16.4972 5.60002 16.0001 5.60002C15.5031 5.60002 15.1001 6.00297 15.1001 6.50002V9.50002C15.1001 9.99708 15.5031 10.4 16.0001 10.4C16.4972 10.4 16.9001 9.99708 16.9001 9.50002V6.50002ZM10.0002 16C10.0002 17.1046 9.10481 18 8.00024 18C6.89567 18 6.00024 17.1046 6.00024 16C6.00024 14.8955 6.89567 14 8.00024 14C9.10481 14 10.0002 14.8955 10.0002 16ZM16.0002 18C17.1048 18 18.0002 17.1046 18.0002 16C18.0002 14.8955 17.1048 14 16.0002 14C14.8956 14 14.0002 14.8955 14.0002 16C14.0002 17.1046 14.8956 18 16.0002 18Z"
                         />
                     </svg>
-                    <span>3</span>
+                    <span class="basket__span">3</span>
                 </a>
             </header>
             <h1 class="visually-hidden">Главная страница сайта</h1>  
             <nav>
                 <ul class="navigation">
-                    <li>
-                        <a href="catalog.html">Куртки</a>
-                        <ul>
-                            <li><a href="catalog.html">Зимние</a></li>
-                            <li><a href="catalog.html">Летние</a></li>
-                            <li><a href="catalog.html">Спортивные</a></li>
-                            <li><a href="catalog.html">Брюки</a></li>
-                            <li><a href="catalog.html">Домашние</a></li>
+                    <li class="navigation__li">
+                        <a class="navigation__link" href="catalog.html">Куртки</a>
+                        <ul class="navigation__drop-menu">
+                            <li class="navigation__drop-menu-li"><a class="navigation__drop-menu-link" href="catalog.html">Зимние</a></li>
+                            <li class="navigation__drop-menu-li"><a class="navigation__drop-menu-link" href="catalog.html">Летние</a></li>
+                            <li class="navigation__drop-menu-li"><a class="navigation__drop-menu-link" href="catalog.html">Спортивные</a></li>
+                            <li class="navigation__drop-menu-li"><a class="navigation__drop-menu-link" href="catalog.html">Брюки</a></li>
+                            <li class="navigation__drop-menu-li"><a class="navigation__drop-menu-link" href="catalog.html">Домашние</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="catalog.html">Шапки</a>
-                        <ul>
-                            <li><a href="catalog.html">Зимние</a></li>
-                            <li><a href="catalog.html">Летние</a></li>
-                            <li><a href="catalog.html">Спортивные</a></li>
-                            <li><a href="catalog.html">Брюки</a></li>
-                            <li><a href="catalog.html">Домашние</a></li>
+                    <li class="navigation__li">
+                        <a class="navigation__link" href="catalog.html">Шапки</a>
+                        <ul class="navigation__drop-menu">
+                            <li class="navigation__drop-menu-li"><a class="navigation__drop-menu-link" href="catalog.html">Зимние</a></li>
+                            <li class="navigation__drop-menu-li"><a class="navigation__drop-menu-link" href="catalog.html">Летние</a></li>
+                            <li class="navigation__drop-menu-li"><a class="navigation__drop-menu-link" href="catalog.html">Спортивные</a></li>
+                            <li class="navigation__drop-menu-li"><a class="navigation__drop-menu-link" href="catalog.html">Брюки</a></li>
+                            <li class="navigation__drop-menu-li"><a class="navigation__drop-menu-link" href="catalog.html">Домашние</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="catalog.html">Штаны</a>
-                        <ul>
-                            <li><a href="catalog.html">Зимние</a></li>
-                            <li><a href="catalog.html">Летние</a></li>
-                            <li><a href="catalog.html">Спортивные</a></li>
-                            <li><a href="catalog.html">Брюки</a></li>
-                            <li><a href="catalog.html">Домашние</a></li>
+                    <li class="navigation__li">
+                        <a class="navigation__link" href="catalog.html">Штаны</a>
+                        <ul class="navigation__drop-menu">
+                            <li class="navigation__drop-menu-li"><a class="navigation__drop-menu-link" href="catalog.html">Зимние</a></li>
+                            <li class="navigation__drop-menu-li"><a class="navigation__drop-menu-link" href="catalog.html">Летние</a></li>
+                            <li class="navigation__drop-menu-li"><a class="navigation__drop-menu-link" href="catalog.html">Спортивные</a></li>
+                            <li class="navigation__drop-menu-li"><a class="navigation__drop-menu-link" href="catalog.html">Брюки</a></li>
+                            <li class="navigation__drop-menu-li"><a class="navigation__drop-menu-link" href="catalog.html">Домашние</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="catalog.html">Перчатки</a>
-                        <ul>
-                            <li><a href="catalog.html">Зимние</a></li>
-                            <li><a href="catalog.html">Летние</a></li>
-                            <li><a href="catalog.html">Спортивные</a></li>
-                            <li><a href="catalog.html">Брюки</a></li>
-                            <li><a href="catalog.html">Домашние</a></li>
+                    <li class="navigation__li">
+                        <a class="navigation__link" href="catalog.html">Перчатки</a>
+                        <ul class="navigation__drop-menu">
+                            <li class="navigation__drop-menu-li"><a class="navigation__drop-menu-link" href="catalog.html">Зимние</a></li>
+                            <li class="navigation__drop-menu-li"><a class="navigation__drop-menu-link" href="catalog.html">Летние</a></li>
+                            <li class="navigation__drop-menu-li"><a class="navigation__drop-menu-link" href="catalog.html">Спортивные</a></li>
+                            <li class="navigation__drop-menu-li"><a class="navigation__drop-menu-link" href="catalog.html">Брюки</a></li>
+                            <li class="navigation__drop-menu-li"><a class="navigation__drop-menu-link" href="catalog.html">Домашние</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -119,227 +119,259 @@
         </div>
         <main>
             <div class="wrapper">
-                <section class="sliders">
-                    <article class="sliders__slider">
-                        <div class="sliders__slider-info">
-                            <p class="sliders__slide-header">
-                                Cлайд об акции какого то товару
-                            </p>
-                            <p class="sliders__slide-body">
-                                Cлайд об акции какого то товару
-                            </p>
-                            <a href="#" class="more">Подробнее</a>
+                <section>
+                    <div class="sliders">
+                        <article class="slider">
+                            <div class="slider__info">
+                                <p class="slider__header">
+                                    Cлайд об акции какого то товару
+                                </p>
+                                <p class="slider__body">
+                                    Cлайд об акции какого то товару
+                                </p>
+                                <a class="slider__more-button" href="#" >Подробнее</a>
+                            </div>
+                            <picture></picture>
+                                <img class="slider__img"
+                                    src="img/clock.png"
+                                    alt=""
+                                    width="219"
+                                    height="269"
+                                    srcset="img/clock@2x.png 2x"
+                                />
+                            </picture>
+                        </article>
+                        <article class="slider visually-hidden">
+                            <div class="slider__info">
+                                <p class="slider__header">
+                                    Cлайд об акции какого то товару
+                                </p>
+                                <p class="slider__body">
+                                    Cлайд об акции какого то товару
+                                </p>
+                                <a class="slider__more-button" href="#" >Подробнее</a>
+                            </div>
+                            <picture>
+                                <img class="slider__img"
+                                    src="img/clock.png"
+                                    alt=""
+                                    width="219"
+                                    height="269"
+                                    srcset="img/clock@2x.png 2x"
+                                />
+                            </picture>
+                        </article>
+                        <button class="arrow arrow-left" type="button"></button>
+                        <button class="arrow arrow-right" type="button"></button>
+                        <div class="sliders__buttons-div">
+                            <button class="sliders__button" type="button"></button>
+                            <button class="sliders__button sliders__button_activebutton" type="button"></button>
                         </div>
-                        <img
-                            src="img/clock.png"
-                            alt=""
-                            width="219"
-                            height="269"
-                        />
-                    </article>
-                    <article class="sliders__slider visually-hidden">
-                        <div class="sliders__slider-info">
-                            <p class="sliders__slide-header">
-                                Cлайд об акции какого то товару
-                            </p>
-                            <p class="sliders__slide-body">
-                                Cлайд об акции какого то товару
-                            </p>
-                            <a href="#" class="more">Подробнее</a>
-                        </div>
-                        <img
-                            src="img/clock.png"
-                            alt=""
-                            width="219"
-                            height="269"
-                        />
-                    </article>
-                    <button class="arrow-left" type="button"></button>
-                    <button class="arrow-right" type="button"></button>
-                    <div class="sliderbutton">
-                        <button type="button"></button>
-                        <button class="activebutton" type="button"></button>
                     </div>
                 </section>
                 <section>
                     <h2 class="section-header">Акционные товары</h2>
                     <div class="cards">
-                        <div class="cards__product-card-wrap">
-                            <article class="cards__product-card">
-                                <span class="discount">Скидка 40%</span>
-                                <a href="#">
-                                    <div class="img-div">
-                                        <img
-                                            src="img/product1.jpg"
-                                            alt=""
-                                            width="200"
-                                            height="200"
-                                        />
+                        <div class="product-card-wrap">
+                            <article class="product-card">
+                                <span class="product-card__discount">Скидка 40%</span>
+                                <a class="product-card__link" href="#">
+                                    <div class="product-card__img-div">
+                                        <picture>
+                                            <img class="product-card__img"
+                                                src="img/product1.jpg"
+                                                alt=""
+                                                width="200"
+                                                height="200"
+                                                srcset="img/product1@2x.jpg 2x"
+                                            />
+                                        </picture>
                                     </div>
-                                    <p>Куртка BluKids Red Mood 4 ever</p>
+                                    <p class="product-card__p">Куртка BluKids Red Mood 4 ever</p>
                                 </a>
-                                <div class="price">
-                                    <span class="price__old-price">2950 грн.</span>
-                                    <span class="price__new-price">1 590 грн.</span>
+                                <div class="product-card__price">
+                                    <span class="product-card__old-price">2950 грн.</span>
+                                    <span class="product-card__new-price">1 590 грн.</span>
                                 </div>
-                                <a href="#" class="add">добавить в корзину</a>
+                                <a href="#" class="product-card__add-button">добавить в корзину</a>
                             </article>
                         </div>
-                        <div class="cards__product-card-wrap">
-                            <article class="cards__product-card">
-                                <span class="newitem">Новинка</span>
-                                <a href="#">
-                                    <div class="img-div">
-                                        <img
-                                            src="img/product2.jpg"
-                                            alt=""
-                                            width="118"
-                                            height="201"
-                                        />
+                        <div class="product-card-wrap">
+                            <article class="product-card">
+                                <span class="product-card__newitem">Новинка</span>
+                                <a class="product-card__link" href="#">
+                                    <div class="product-card__img-div">
+                                        <picture>
+                                            <img class="product-card__img"
+                                                src="img/product2.jpg"
+                                                alt=""
+                                                width="118"
+                                                height="201"
+                                                srcset="img/product2@2x.jpg 2x"
+                                            />
+                                        </picture>
                                     </div>
-                                    <p>Куртка BluKids Red Mood 4 ever ку...</p>
+                                    <p class="product-card__p">Куртка BluKids Red Mood 4 ever ку...</p>
                                 </a>
-                                <div class="price">
-                                    <span class="price__old-price">2950 грн.</span>
-                                    <span class="price__new-price">1 590 грн.</span>
+                                <div class="product-card__price">
+                                    <span class="product-card__old-price">2950 грн.</span>
+                                    <span class="product-card__new-price">1 590 грн.</span>
                                 </div>
-                                <a href="#" class="add">добавить в корзину</a>
+                                <a href="#" class="product-card__add-button">добавить в корзину</a>
                             </article>
                         </div>
-                        <div class="cards__product-card-wrap">
-                            <article class="cards__product-card">
-                                <a href="#">
-                                    <div class="img-div">
-                                        <img
-                                            src="img/product3.jpg"
-                                            alt=""
-                                            width="200"
-                                            height="200"
-                                        />
+                        <div class="product-card-wrap">
+                            <article class="product-card">
+                                <a class="product-card__link" href="#">
+                                    <div class="product-card__img-div">
+                                        <picture>
+                                            <img class="product-card__img"
+                                                src="img/product3.jpg"
+                                                alt=""
+                                                width="200"
+                                                height="200"
+                                                srcset="img/product3@2x.jpg 2x"
+                                            />
+                                        </picture>
                                     </div>
-                                    <p>Куртка BluKids Red Mood 4 ever</p>
+                                    <p class="product-card__p">Куртка BluKids Red Mood 4 ever</p>
                                 </a>
-                                <div class="price">
-                                    <span class="price__old-price">2950 грн.</span>
-                                    <span class="price__new-price">1 590 грн.</span>
+                                <div class="product-card__price">
+                                    <span class="product-card__old-price">2950 грн.</span>
+                                    <span class="product-card__new-price">1 590 грн.</span>
                                 </div>
-                                <a href="#" class="add">добавить в корзину</a>
+                                <a href="#" class="product-card__add-button">добавить в корзину</a>
                             </article>
                         </div>
-                        <div class="cards__product-card-wrap">
-                            <article class="cards__product-card">
-                                <a href="#">
-                                    <div class="img-div">
-                                        <img
-                                            src="img/product4.jpg"
-                                            alt=""
-                                            width="200"
-                                            height="200"
-                                        />
+                        <div class="product-card-wrap">
+                            <article class="product-card">
+                                <a class="product-card__link" href="#">
+                                    <div class="product-card__img-div">
+                                        <picture>
+                                            <img class="product-card__img"
+                                                src="img/product4.jpg"
+                                                alt=""
+                                                width="200"
+                                                height="200"
+                                                srcset="img/product4@2x.jpg 2x"
+                                            />
+                                        </picture>
                                     </div>
-                                    <p>Куртка BluKids Red Mood 4 ever</p>
+                                    <p class="product-card__p">Куртка BluKids Red Mood 4 ever</p>
                                 </a>
-                                <div class="price">
-                                    <span class="price__old-price">2950 грн.</span>
-                                    <span class="price__new-price">1 590 грн.</span>
+                                <div class="product-card__price">
+                                    <span class="product-card__old-price">2950 грн.</span>
+                                    <span class="product-card__new-price">1 590 грн.</span>
                                 </div>
-                                <a href="#" class="add">добавить в корзину</a>
+                                <a href="#" class="product-card__add-button">добавить в корзину</a>
                             </article>
                         </div>
                     </div>
                 </section>
                 <section>
                     <h2 class="section-header">Новинки</h2>
-                    <ul class="goodstype">
-                        <li>
-                            <button class="active" type="button">Куртки</button>
+                    <ul class="tab-menu">
+                        <li class="tab-menu__li">
+                            <button  class="tab-menu__button tab-menu__button_active" type="button">Куртки</button>
                         </li>
-                        <li><button type="button">Штаны</button></li>
-                        <li><button type="button">Шорты</button></li>
-                        <li><button type="button">Шапки</button></li>
-                        <li><button type="button">Майки</button></li>
+                        <li class="tab-menu__li"><button class="tab-menu__button" type="button">Штаны</button></li>
+                        <li class="tab-menu__li"><button class="tab-menu__button" type="button">Шорты</button></li>
+                        <li class="tab-menu__li"><button class="tab-menu__button" type="button">Шапки</button></li>
+                        <li class="tab-menu__li"><button class="tab-menu__button" type="button">Майки</button></li>
                     </ul>
                     <div class="cards">
-                        <div class="cards__product-card-wrap">
-                            <article class="cards__product-card">
-                                <span class="discount">Скидка 40%</span>
-                                <a href="#">
-                                    <div class="img-div">
-                                        <img
-                                            src="img/product1.jpg"
-                                            alt=""
-                                            width="200"
-                                            height="200"
-                                        />
+                        <div class="product-card-wrap">
+                            <article class="product-card">
+                                <span class="product-card__discount">Скидка 40%</span>
+                                <a class="product-card__link" href="#">
+                                    <div class="product-card__img-div">
+                                        <picture>
+                                            <img class="product-card__img"
+                                                src="img/product1.jpg"
+                                                alt=""
+                                                width="200"
+                                                height="200"
+                                                srcset="img/product1@2x.jpg 2x"
+                                            />
+                                        </picture>
                                     </div>
-                                    <p>Куртка BluKids Red Mood 4 ever</p>
+                                    <p class="product-card__p">Куртка BluKids Red Mood 4 ever</p>
                                 </a>
-                                <div class="price">
-                                    <span class="price__old-price">2950 грн.</span>
-                                    <span class="price__new-price">1 590 грн.</span>
+                                <div class="product-card__price">
+                                    <span class="product-card__old-price">2950 грн.</span>
+                                    <span class="product-card__new-price">1 590 грн.</span>
                                 </div>
-                                <a href="#" class="add">добавить в корзину</a>
+                                <a href="#" class="product-card__add-button">добавить в корзину</a>
                             </article>
                         </div>
-                        <div class="cards__product-card-wrap">
-                            <article class="cards__product-card">
-                                <span class="newitem">Новинка</span>
-                                <a href="#">
-                                    <div class="img-div">
-                                        <img
-                                            src="img/product2.jpg"
-                                            alt=""
-                                            width="118"
-                                            height="201"
-                                        />
+                        <div class="product-card-wrap">
+                            <article class="product-card">
+                                <span class="product-card__newitem">Новинка</span>
+                                <a class="product-card__link" href="#">
+                                    <div class="product-card__img-div">
+                                        <picture>
+                                            <img class="product-card__img"
+                                                src="img/product2.jpg"
+                                                alt=""
+                                                width="118"
+                                                height="201"
+                                                srcset="img/product2@2x.jpg 2x"
+                                            />
+                                        </picture>
                                     </div>
-                                    <p>Куртка BluKids Red Mood 4 ever ку...</p>
+                                    <p class="product-card__p">Куртка BluKids Red Mood 4 ever ку...</p>
                                 </a>
-                                <div class="price">
-                                    <span class="price__old-price">2950 грн.</span>
-                                    <span class="price__new-price">1 590 грн.</span>
+                                <div class="product-card__price">
+                                    <span class="product-card__old-price">2950 грн.</span>
+                                    <span class="product-card__new-price">1 590 грн.</span>
                                 </div>
-                                <a href="#" class="add">добавить в корзину</a>
+                                <a href="#" class="product-card__add-button">добавить в корзину</a>
                             </article>
                         </div>
-                        <div class="cards__product-card-wrap">
-                            <article class="cards__product-card">
-                                <a href="#">
-                                    <div class="img-div">
-                                        <img
-                                            src="img/product3.jpg"
-                                            alt=""
-                                            width="200"
-                                            height="200"
-                                        />
+                        <div class="product-card-wrap">
+                            <article class="product-card">
+                                <a class="product-card__link" href="#">
+                                    <div class="product-card__img-div">
+                                        <picture>
+                                            <img class="product-card__img"
+                                                src="img/product3.jpg"
+                                                alt=""
+                                                width="200"
+                                                height="200"
+                                                srcset="img/product3@2x.jpg 2x"
+                                            />
+                                        </picture>
                                     </div>
-                                    <p>Куртка BluKids Red Mood 4 ever</p>
+                                    <p class="product-card__p">Куртка BluKids Red Mood 4 ever</p>
                                 </a>
-                                <div class="price">
-                                    <span class="price__old-price">2950 грн.</span>
-                                    <span class="price__new-price">1 590 грн.</span>
+                                <div class="product-card__price">
+                                    <span class="product-card__old-price">2950 грн.</span>
+                                    <span class="product-card__new-price">1 590 грн.</span>
                                 </div>
-                                <a href="#" class="add">добавить в корзину</a>
+                                <a href="#" class="product-card__add-button">добавить в корзину</a>
                             </article>
                         </div>
-                        <div class="cards__product-card-wrap">
-                            <article class="cards__product-card">
-                                <a href="#">
-                                    <div class="img-div">
-                                        <img
-                                            src="img/product4.jpg"
-                                            alt=""
-                                            width="200"
-                                            height="200"
-                                        />
+                        <div class="product-card-wrap">
+                            <article class="product-card">
+                                <a class="product-card__link" href="#">
+                                    <div class="product-card__img-div">
+                                        <picture>
+                                            <img class="product-card__img"
+                                                src="img/product4.jpg"
+                                                alt=""
+                                                width="200"
+                                                height="200"
+                                                srcset="img/product4@2x.jpg 2x"
+                                            />
+                                        </picture>
                                     </div>
-                                    <p>Куртка BluKids Red Mood 4 ever</p>
+                                    <p class="product-card__p">Куртка BluKids Red Mood 4 ever</p>
                                 </a>
-                                <div class="price">
-                                    <span class="price__old-price">2950 грн.</span>
-                                    <span class="price__new-price">1 590 грн.</span>
+                                <div class="product-card__price">
+                                    <span class="product-card__old-price">2950 грн.</span>
+                                    <span class="product-card__new-price">1 590 грн.</span>
                                 </div>
-                                <a href="#" class="add">добавить в корзину</a>
+                                <a href="#" class="product-card__add-button">добавить в корзину</a>
                             </article>
                         </div>
                     </div>
@@ -347,30 +379,36 @@
                 <section>
                     <h2 class="section-header">Отзывы</h2>
                     <div class="reviews">
-                        <button class="arrow-left" type="button"></button>
-                        <button class="arrow-right" type="button"></button>
-                        <article>
-                            <img
-                                src="img/man.jpg"
-                                alt=""
-                                width="188"
-                                height="188"
-                            />
-                            <p class="review">
+                        <button class="arrow arrow-left" type="button"></button>
+                        <button class="arrow arrow-right" type="button"></button>
+                        <article class="review">
+                            <picture>
+                                <img class="review__img"
+                                    src="img/man.jpg"
+                                    alt=""
+                                    width="188"
+                                    height="188"
+                                    srcset="img/man@2x.jpg 2x"
+                                />
+                            </picture>
+                            <p class="review__p">
                                 Отличное качество. Очень удобно сделаны карманы,
                                 телефон удобно доставать. При ношении вызывает у
                                 меня только радость. В ней очень тепло. Минусов
                                 нету. Рекомендую.
                             </p>
                         </article>
-                        <article>
-                            <img
-                                src="img/woman.jpg"
-                                alt=""
-                                width="188"
-                                height="188"
-                            />
-                            <p class="review">
+                        <article class="review">
+                            <picture>
+                                <img class="review__img"
+                                    src="img/woman.jpg"
+                                    alt=""
+                                    width="188"
+                                    height="188"
+                                    srcset="img/woman@2x.jpg 2x"
+                                />
+                            </picture>
+                            <p class="review__p">
                                 Придбала для дитини курточку гарної якості,
                                 тепла, стильно пошита, рівні строчки, не марка.
                                 Можна прати в пралці, але потрібно включати
@@ -382,7 +420,7 @@
             </div>
             <section>
                 <div class="map">
-                    <iframe
+                    <iframe class="map__frame"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2750.2394111766093!2d30.720697615589913!3d46.42413407912411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6337522de4913%3A0x908a819813d3d94a!2z0JvRjtGB0YLQtNC-0YDRhNGB0LrQsNGPINC00L7RgC4sIDkwLCDQntC00LXRgdGB0LAsINCe0LTQtdGB0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDY1MDAw!5e0!3m2!1sru!2sua!4v1620315839053!5m2!1sru!2sua"
                         width="100%"
                         height="500"
@@ -392,8 +430,8 @@
                     >
                     </iframe>
                 </div>
-                <div class="wrapper undermapinfo">
-                    <svg
+                <div class="wrapper undermap-info">
+                    <svg class="undermap-info__svg"
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
@@ -407,18 +445,18 @@
                             fill="#FF3A3A"
                         />
                     </svg>
-                    <p class="address">
-                        <span class="address-header">Адрес:</span>65088,
+                    <p class="undermap-info__address">
+                        <span class="undermap-info__address-header">Адрес:</span>65088,
                         Люстдорфська дорога, 90А, Одеса, Одеська область, 65009
                     </p>
                 </div>
             </section>
         </main>
-        <footer class="footer wrapper">
+        <footer class="footerblock wrapper">
             <div class="logoblock">
-                <a href="index.html">
+                <a class="foot-logo" href="index.html">
                     <svg
-                        class="bottlogo"
+                        class="foot-logo__svg"
                         width="118"
                         height="54"
                         viewBox="0 0 118 54"
@@ -450,14 +488,14 @@
                         </defs>
                     </svg>
                 </a>
-                <ul class="menu">
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Акции</a></li>
+                <ul class="menu footerblock__menu">
+                    <li class="menu__li"><a class="menu__link" href="#">О нас</a></li>
+                    <li class="menu__li"><a class="menu__link" href="#">Акции</a></li>
                 </ul>
                 <ul class="logos">
-                    <li>
-                        <a class="icon" href="#">
-                            <svg
+                    <li class="logos__li">
+                        <a class="logos__icon" href="#">
+                            <svg class="logos__svg"
                                 width="50"
                                 height="50"
                                 viewBox="0 0 50 50"
@@ -482,9 +520,9 @@
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <a class="icon" href="#">
-                            <svg
+                    <li class="logos__li">
+                        <a class="logos__icon" href="#">
+                            <svg class="logos__svg"
                                 width="48"
                                 height="48"
                                 viewBox="0 0 48 48"
@@ -503,9 +541,9 @@
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <a class="icon" href="#">
-                            <svg
+                    <li class="logos__li">
+                        <a class="logos__icon" href="#">
+                            <svg class="logos__svg"
                                 width="48"
                                 height="48"
                                 viewBox="0 0 48 48"

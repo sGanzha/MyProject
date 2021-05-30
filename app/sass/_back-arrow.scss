@@ -1,0 +1,31 @@
+.back-arrow {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $grey1;
+    position: relative;
+    padding: 14px 32px;
+
+    &:hover {
+        color: $purple;
+        transition-duration: 1s;
+    }
+
+    &:active {
+        color: $purple50;
+        transition-duration: 1s;
+    }
+
+    &::before {
+        content: "";
+        width: 16px;
+        height: 12px;
+        background-image: url(../img/back-line.svg);
+        position: absolute;
+        left: 3px;
+        top: 15px;
+    }
+}

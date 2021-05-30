@@ -1,0 +1,112 @@
+.product-card {
+    display: flex;
+    padding: 15px 15px 20px;
+    background: $lightgrad;
+    border-radius: 16px;
+    flex-direction: column;
+    position: relative;
+
+    &__discount {
+        display: inline-flex;
+        border-radius: 10px;
+        background: $red;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: $white;
+        padding: 6px 16px;
+        position: absolute;
+        left: 8px;
+        top: 8px;
+        width: 111px;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img-div {
+        background-color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 268px;
+    }
+
+    &__p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $grey1;
+        margin: 0;
+        padding-top: 18px;
+    }
+
+    &__price {
+        display: inline-flex;
+        justify-content: space-between;
+        padding: 10px 0 20px;
+    }
+
+    &__old-price {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        color: $grey1;
+        text-decoration: line-through;
+        margin: 0;
+        width: 117px;
+    }
+
+    &__new-price {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+        color: $black;
+        margin: 0;
+        width: 117px;
+    }
+
+    &__add-button {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $grey1;
+        background: $white;
+        border-radius: 12px;
+        border: 2px solid $yellow;
+        display: block;
+        text-align: center;
+        padding: 11px 41px;
+    }
+
+    &__add-button:hover{
+        background: $yellow;
+        transition-duration: 1s;
+    }
+
+    &__newitem {
+        display: inline-flex;
+        border-radius: 10px;
+        background: $yellow;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: $purple;
+        padding: 6px 16px;
+        position: absolute;
+        left: 8px;
+        top: 8px;
+        width: 90px;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &:hover {
+        filter: drop-shadow(0px 8px 32px rgba(0, 0, 0, 0.12));
+        transition-duration: 1s;
+    }
+
+}
