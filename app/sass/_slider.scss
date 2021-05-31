@@ -37,6 +37,7 @@
         display: flex;
         flex-direction: column;
         margin-left: 87px;
+        width: 36%;
     }
 
     &__header {
@@ -45,7 +46,6 @@
         line-height: 47px;
         color: $white;
         margin: 0;
-        width: 36%;
         padding-top: 30px;
     }
 
@@ -89,7 +89,7 @@
 
 }
 
-@media (min-width: 375px){
+@media (max-width: 375px){
     .sliders {
         margin: 0 -17px;
     }
