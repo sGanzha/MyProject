@@ -33,5 +33,10 @@
 @media (max-width: 375px){
     .logoblock {
         flex-direction: column;
+        padding: 51px 0 55px;
+    }
+
+    .logos {
+        margin: 0;
     }
 }

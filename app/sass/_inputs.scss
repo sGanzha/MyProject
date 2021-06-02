@@ -7,6 +7,7 @@
     &__div {
         display: flex;
         flex-direction: column;
+        width: 47.6%;
     }
 
     &__input,
@@ -33,7 +34,7 @@
     }
 
     &__input {
-        width: 298px;
+        width: 100%;
         margin-bottom: 10px;
     }
 
@@ -48,7 +49,20 @@
     }
 
     &__textarea {
-        width: 626px;
+        width: 100%;
     }
+
+}
+
+@media (max-width: 375px){
+    .inputs {
+        width: 100%;
+        display: block;
+
+        &__div {
+            width: 100%;
+        }
+    }
+
 
 }

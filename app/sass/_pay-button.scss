@@ -25,3 +25,11 @@
 
 
 }
+
+@media (max-width: 375px){
+    .pay-button {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+}

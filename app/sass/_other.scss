@@ -106,7 +106,8 @@ ul {
 
 
 @media (max-width: 375px) {
-    .wrapper {
+    .wrapper,
+    .form-wrapper  {
         width: 375px;
         margin: 0 auto;
         padding: 0 16px;
@@ -138,5 +139,13 @@ ul {
         display: block;
         
     }
+
+    .radios-inputs {
+        display: block;
+    }
+
+    // .pay-button-div {
+    //     display: block;
+    // }
 
 }

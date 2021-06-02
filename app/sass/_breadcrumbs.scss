@@ -54,3 +54,30 @@
     }
 
 }
+
+@media (max-width: 375px) {
+    .breadcrumbs {
+        flex-wrap: wrap;
+
+        &__homelogo {
+            margin: 0;
+        }
+
+        &__text {
+            padding-left:  25px;
+        }
+
+        &__text::before {
+            left: 9px;
+        }
+
+        &__link {
+            padding-right: 0;
+            padding-left: 24px;
+        }
+
+        &__link::before {
+            left: 7px;
+        }
+    }
+}
