@@ -72,10 +72,24 @@
         transition-duration: 1s;
     }
 
+    &__mini {
+        display: none;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 110%;
+        color: $grey2;
+    }
+
 }
 
 @media (max-width: 375px){
     .navigation {
         display: none;
+
+        &__mini {
+            display: block;
+        }
     }
+
+
 }

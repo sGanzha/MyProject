@@ -98,11 +98,18 @@ ul {
     margin: 0 -15px 0 0;
 }
 
+.minimize-menu{
+    display: none;
+    background-color: transparent;
+    border: none;
+}
+
+
 @media (max-width: 375px) {
     .wrapper {
-        width: 343px;
+        width: 375px;
         margin: 0 auto;
-        padding: 0;
+        padding: 0 16px;
 
     }
 
@@ -126,4 +133,10 @@ ul {
         padding: 0 22.5px 20px;
         width: 100%;
     }
+
+    .minimize-menu{
+        display: block;
+        
+    }
+
 }

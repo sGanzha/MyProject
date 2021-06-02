@@ -34,8 +34,6 @@
     border-radius: 16px;
 
     &__info {
-        display: flex;
-        flex-direction: column;
         margin-left: 87px;
         width: 36%;
     }
@@ -71,9 +69,6 @@
         color: $white;
         background: $red;
         padding: 16px 30px;
-        display: block;
-        text-align: center;
-        margin-right: 305px;
         border-radius: 12px;
     }
 
@@ -90,11 +85,23 @@
 }
 
 @media (max-width: 375px){
-    .sliders {
-        margin: 0 -17px;
+
+    .slider {
+        display: flex;
+        flex-direction: column;
+        padding: 26px 17px 65px 18px;
+    
+
+    &__info {
+        width: 100%;
+        margin: 0;
     }
 
-    .slider__header {
-        width: 91%;
+    &__img {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        order: -1;
     }
-}
+
+    }}
