@@ -1,6 +1,8 @@
 @media (max-width: 375px) {
     .menu.footerblock__menu{
         order: -1;
-        padding: 0;
+        padding: 41px 0;
+        width: 46.35%;
+        justify-content: space-between;
     }
 }

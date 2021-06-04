@@ -78,6 +78,24 @@
         font-size: 18px;
         line-height: 110%;
         color: $grey2;
+        border: none;
+        background-color: #FBFBFB;
+        padding: 14px 41px 14px 16px;
+        text-align: start;   
+        position: relative;   
+    }
+
+    &__mini::after{
+        content: '';
+        background-image:url(../img/right-arrow.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 38px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
 }
@@ -88,6 +106,8 @@
 
         &__mini {
             display: block;
+            
+            width: 109%;
         }
     }
 

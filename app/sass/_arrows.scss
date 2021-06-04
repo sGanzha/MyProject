@@ -4,12 +4,10 @@
     border-radius: 50%;
     padding: 0;
     position: absolute;
-    top: 50%;
     border: transparent;
     background-color: rgba(255, 255, 255, 0.5);
     background-repeat: no-repeat;
     background-position: center center;
-    transform: translateY(-50%);
     transition-property: background-color;
 
     &:hover {
@@ -18,13 +16,50 @@
     }
 }
 
-.arrow-left {
+.arrow-left-slider {
+    left: 22px;
+    top:  50%;
+    transform: translateY(-50%);
+    background-image: url(../img/left-arrow.svg);
+}
+
+.arrow-right-slider {
+    right: 22px;
+    top:  50%;
+    transform: translateY(-50%);
+    background-image: url(../img/right-arrow.svg);
+
+}
+
+.arrow-left-reviews {
     left: 22px;
     background-image: url(../img/left-arrow.svg);
 }
 
-.arrow-right {
+.arrow-right-reviews {
     right: 22px;
     background-image: url(../img/right-arrow.svg);
 
+}
+
+
+
+@media (max-width: 375px){
+    .arrow-left-slider{
+        left: 0;
+    }
+
+    .arrow-right-slider {
+        right: 0;
+    }
+
+    .arrow-left-reviews{
+        left: 0;
+        bottom: 30px;
+    }
+
+    .arrow-right-reviews {
+        right: 0;       
+        bottom: 30px;
+    }
 }

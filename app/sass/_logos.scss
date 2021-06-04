@@ -38,5 +38,12 @@
 
     .logos {
         margin: 0;
+        width: 61.81%;
+        justify-content: space-between;
+        padding-top: 55px;
+
+        &__li{
+            margin: 0;
+        }
     }
 }

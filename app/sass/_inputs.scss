@@ -59,8 +59,13 @@
         width: 100%;
         display: block;
 
+        // &__input {
+        //     margin: 0;
+        // }
+
         &__div {
             width: 100%;
+            padding-top: 30px;
         }
     }
 
