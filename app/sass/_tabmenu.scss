@@ -1,5 +1,5 @@
 .tab-menu {
-    display: flex;
+    display: inline-flex;
     list-style-type: none;
     align-items: center;
     background: $grey6;
@@ -36,6 +36,7 @@
 
 @media (max-width: 375px){
     .tab-menu {
+        display: flex;
         overflow: auto;
     }
 }

@@ -1201,9 +1201,9 @@ ul {
               order: -1; } }
 
 .tab-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   list-style-type: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1235,6 +1235,9 @@ ul {
 
 @media (max-width: 375px) {
   .tab-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     overflow: auto; } }
 
 .undermap-info {
