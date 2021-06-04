@@ -33,11 +33,15 @@
 
 .arrow-left-reviews {
     left: 22px;
+    top:  50%;
+    transform: translateY(-50%);
     background-image: url(../img/left-arrow.svg);
 }
 
 .arrow-right-reviews {
     right: 22px;
+    top:  50%;
+    transform: translateY(-50%);
     background-image: url(../img/right-arrow.svg);
 
 }
@@ -55,11 +59,13 @@
 
     .arrow-left-reviews{
         left: 0;
+        top: unset;
         bottom: 30px;
     }
 
     .arrow-right-reviews {
-        right: 0;       
+        right: 0;     
+        top: unset;  
         bottom: 30px;
     }
 }

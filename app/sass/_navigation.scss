@@ -74,7 +74,7 @@
 
     &__mini {
         display: none;
-        font-weight: bold;
+        font-weight: 700;
         font-size: 18px;
         line-height: 110%;
         color: $grey2;
@@ -105,9 +105,9 @@
         display: none;
 
         &__mini {
-            display: block;
-            
+            display: block;           
             width: 109%;
+            margin: 0 -16px;
         }
     }
 

@@ -40,11 +40,7 @@ ul {
     padding: 0;
 }
 
-.wrapper {
-    width: 1310px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
+
 
 .cards {
     display: flex;
@@ -70,7 +66,7 @@ ul {
 .pay-button-div {
     display: flex;
     justify-content: flex-end;
-    padding: 29px 0 78px;
+    padding: 43px 0 78px;
 }
 
 .catalog {
@@ -100,10 +96,7 @@ ul {
         flex-direction: column;
     }
 
-    .product-card-wrap-catalog {
-        padding: 0 22.5px 20px;
-        width: 100%;
-    }
+  
 
     .minimize-menu {
         display: block;
